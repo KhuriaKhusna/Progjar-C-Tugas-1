@@ -10,8 +10,7 @@ try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Connect the socket to the port where the server is listening
-    # ubah localhost jadi
-    server_address = ('10.210.102.207', 10000)
+    server_address = ('172.20.0.2', 10000)
     logging.info(f"connecting to {server_address}")
     sock.connect(server_address)
 
